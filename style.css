@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: rgba(129, 128, 128, 0.3);
+    color: #fff;
+}
+
+main {
+    width: 88%;
+    max-width: 700px;
+    margin: 2em auto;
+    border: 2px solid none;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 10px 0px 28px -8px grey;
+}
+
+.top{
+    padding: 1.4em;
+    background-color: #fff;
+}
+
+.top h1 {
+    font-size: 1.2rem;
+    color: hsl(179, 62%, 43%);
+    margin: 0.5em 0;;
+}
+
+.top p:first-of-type {
+    color: hsl(71, 73%, 54%);
+    margin: 1em 0;
+    font-weight: 700;
+}
+
+.top p:last-of-type {
+    color: hsl(218, 22%, 67%);
+    margin: 0.5em 0;
+    line-height: 1.5em;
+}
+
+.mid {
+    background-color: hsl(179, 62%, 43%);
+    padding: 1.4em;
+}
+
+.mid h1 {
+    font-size: 1.2rem;
+    margin: 0.8em 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex p:first-of-type {  
+    font-size: 2rem;
+    margin-right: 0.4em;
+}
+
+.flex p:last-of-type {
+    color: hsl(204, 43%, 93%);
+}
+
+.mid-container > p {
+    margin: 0.6em 0;
+}
+
+button {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.1rem;
+    width: 100%;
+    color: #fff;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    padding: 0.9em;
+    margin: 0.8em 0;
+    box-shadow: 0 5px 10px -4px grey;
+}
+
+.bottom {
+    background-color: hsl(179, 76%, 42%);
+    padding: 1.3em;
+}
+
+.bottom h1 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5em;
+}
+
+.bottom p {
+    color: hsl(204, 43%, 93%);
+    line-height: 1.5;
+}
+
+@media (min-width: 700px) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .top h1 {
+        font-size: 1.5rem;
+    }
+
+    .top p:first-of-type {
+        font-size: 1.2rem;
+    }
+
+    .top p:last-of-type {
+        margin-bottom: 1em;
+    }
+    .top, .mid {
+        padding-left: 2.8em;
+    }
+
+    .mid-container {
+        width: 90%;
+    }
+    .mid h1 {
+        margin-bottom: 1.1em;
+    }
+    .mid-container > p {
+        margin: 1em 0;
+    }
+    button {
+        padding: 0.65em 0.9em;
+    }
+
+    .bottom {
+        padding: 2em;
+    }
+
+    .top-text {
+        width: 85%;
+    }
+
+    section {   
+        display: flex;
+    }
+    .mid, .bottom {
+        flex-basis: 50%;
+    }
+    .bottom h1 {
+        margin-bottom: 0.8em;
+    }
+}
